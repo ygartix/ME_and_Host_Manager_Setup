@@ -1,0 +1,20 @@
+{
+	"main": {
+		"role": "main_engine",
+                     "os": "ubuntu",
+		"name": "perclnx40",
+		"userName": "administrator",
+		"password": "trio_012",
+		"ip": "143.185.122.171",
+		"version": ""
+	},
+ 	"perclnx96": {
+		"role": "host",
+		"os": "ubuntu",
+		"name": "perclnx40",
+		"userName": "administrator",
+		"password": "trio_012",
+		"ip": "143.185.122.171",
+                "version": "v2.6.7"
+	}
+ }
