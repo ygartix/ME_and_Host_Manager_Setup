@@ -61,6 +61,7 @@ Filename: "C:\Python27\Scripts\pip.exe"; Parameters: "install --proxy=http://pro
 Filename: "C:\Python27\Scripts\pip.exe"; Parameters: "install --proxy=http://proxy-chain.intel.com:911 python-enumeration"; StatusMsg: "Installing python packages..."; Flags: skipifsilent;
 Filename: "C:\Python27\Scripts\pip.exe"; Parameters: "install --proxy=http://proxy-chain.intel.com:911 numpy"; StatusMsg: "Installing python packages..."; Flags: skipifsilent;
 Filename: "C:\Python27\Scripts\pip.exe"; Parameters: "install --proxy=http://proxy-chain.intel.com:911 scipy"; StatusMsg: "Installing python packages..."; Flags: skipifsilent;
+Filename: "C:\Python27\Scripts\pip.exe"; Parameters: "install --proxy=http://proxy-chain.intel.com:911 pyStopWatch"; StatusMsg: "Installing python packages..."; Flags: skipifsilent;
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
