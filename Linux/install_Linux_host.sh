@@ -72,6 +72,7 @@ sudo apt-get -y install python-enum
 sudo pip install numpy
 sudo apt-get -y install python-pyatspi
 sudo pip install scipy
+sudo pip install pyStopWatch
 sudo apt-get -y install lsb-core
 
 
