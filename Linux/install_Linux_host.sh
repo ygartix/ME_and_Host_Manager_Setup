@@ -55,7 +55,7 @@ EXPORT_LINE="TEMP_DIR="$TEMP_DIR
 echo $PASSWORD | sudo -S grep -qF "$EXPORT_LINE" /etc/environment || echo "$EXPORT_LINE" >> /etc/environment
 
 echo ----- Setting environment variable: PYTHONPATH -----
-EXPORT_LINE="PYTHONPATH=/home/$USER_NAME/rs_autolabs/"
+EXPORT_LINE="PYTHONPATH=/home/$USER_NAME/rs_autolabs:."
 echo $PASSWORD | sudo -S grep -qF "$EXPORT_LINE" /etc/environment || echo "$EXPORT_LINE" >> /etc/environment
 
 echo ----- Setting environment variable: REALSENSE_DRIVER -----
