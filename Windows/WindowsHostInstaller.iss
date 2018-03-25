@@ -34,7 +34,7 @@ SolidCompression=yes
 
 [Files]
 Source: "Git-2.15.0-64-bit.exe"; DestDir: "C:\temp";
-Source: "python-2.7.14.msi"; DestDir: "C:\temp";
+Source: "python-2.7.14.amd64.msi"; DestDir: "C:\temp";
 Source: "environment_vars_for_win_host.reg"; DestDir: "C:\temp";
 Source: "updateRegistry.vbs"; DestDir: "C:\temp";
 Source: "clone_autolab.bat"; DestDir: "C:\temp";
