@@ -19,10 +19,9 @@
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
 AppId={{9D52BB1D-8547-4A7E-9A94-F980F596684C}
 AppName=Windows Host Installer
-AppVersion=1.0
+AppVersion=1.1
 AppVerName=Windows Host Installer 1.0
 AppPublisher=Automation Framework
-
 
 DefaultDirName=C:\temp
 DisableProgramGroupPage=yes
@@ -31,6 +30,9 @@ OutputBaseFilename=Install_windows_host
 SetupIconFile="imageInstaller.ico"
 Compression=lzma
 SolidCompression=yes
+
+[Dirs]
+Name: "C:\Users\admin\temp_dir"
 
 [Files]
 Source: "Git-2.15.0-64-bit.exe"; DestDir: "C:\temp";
