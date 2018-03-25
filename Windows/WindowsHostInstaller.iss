@@ -46,7 +46,7 @@ Filename: "C:\temp\Git-2.15.0-64-bit.exe"; StatusMsg: "Installing GIT client..."
 Filename: "C:\Program Files\Git\git-bash.exe"; Parameters: "clone https://rsautolabs:rsautolabs_intel@github.com/IntelRealSense/rs_autolabs.git"; StatusMsg: "Cloning lab_autoinstaller files from GIT..."; Flags: skipifsilent
 Filename: "C:\temp\clone_autolab.bat"; StatusMsg: "Cloning auto lab folder from GIT repository..."; Flags: skipifsilent
 
-Filename: "msiexec.exe"; Parameters: "/i ""C:\temp\python-2.7.14.msi"" /qb"; WorkingDir: {tmp}; StatusMsg: "Installing python..."; Flags: skipifsilent;
+Filename: "msiexec.exe"; Parameters: "/i ""C:\temp\python-2.7.14.amd64.msi"" /qb"; WorkingDir: {tmp}; StatusMsg: "Installing python..."; Flags: skipifsilent;
 
 Filename: "C:\Windows\regedit.exe"; Parameters: "/S ""C:\temp\environment_vars_for_win_host.reg"""; StatusMsg: "Setting environment variables..."; Flags: skipifsilent;
 Filename: "C:\WINDOWS\system32\cscript.exe"; Parameters: "C:\temp\updateRegistry.vbs"; StatusMsg: "Setting environment variables into path..."; Flags: skipifsilent;
