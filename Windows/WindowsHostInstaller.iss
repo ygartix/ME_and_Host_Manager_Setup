@@ -41,6 +41,7 @@ Source: "environment_vars_for_win_host.reg"; DestDir: "C:\temp";
 Source: "updateRegistry.vbs"; DestDir: "C:\temp";
 Source: "clone_autolab.bat"; DestDir: "C:\temp";
 Source: "OpenSSH-Win64-1.1.zip"; DestDir: "C:\temp";
+Source: "rs_autolabs_utils"; DestDir: "C:\users\admin";
 
 [Run]
 

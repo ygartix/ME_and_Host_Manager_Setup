@@ -1,0 +1,7 @@
+Windows:
+Run the following command from FWUpgrade folder:
+./FWUpgrade.exe Full_Path_Of_FlashGeneratedImage_*.bin	 /FullBurn
+
+Linux:
+Run the following command from DS5_FW_Burning_Tool folder:
+python DS5_FW_Burning_Tool.py Full_Path_Of_FlashGeneratedImage_*.bin
