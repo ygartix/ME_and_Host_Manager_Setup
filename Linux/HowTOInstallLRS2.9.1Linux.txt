@@ -1,15 +1,18 @@
 How to install LRS on Linux:
 ~~~~~~~~~~~~~~~~~~~
 Uninstall:
-cd /librealsense/build
- sudo make uninstall && make clean
+cd /home/administrator/librealsense/build
+sudo make uninstall && make clean
+delete the librealsense folder
 
 Instructions can be found in: https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md
 
 
 
 Install:
+Refer to home directory: cd ~
 Clone LRS (copy the URL as httpcd re	): git clone https://github.com/IntelRealSense/librealsense.git
+cd ~/librealsense
 In case of using tags:                  git checkout tags/<tag_name> for example: git checkout tags/v2.10.3
 
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
