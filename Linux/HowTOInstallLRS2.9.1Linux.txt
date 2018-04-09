@@ -32,9 +32,10 @@ Install udev rules located in librealsense source directory:
 
     Next, build the patched module for the desired machine configuration.
 
+    !!! Since we are in kernel 112 (uname -r) we shouldn't install this patch !!!
     Ubuntu 14/16 LTS The script will download, patch and build the uvc kernel module from source.
     Then it will attempt to insert the patched module instead of the active one. If failed the original uvc module will be preserved.
-        ./scripts/patch-realsense-ubuntu-xenial.sh
+    #    ./scripts/patch-realsense-ubuntu-xenial.shv2103
 
 Type: sudo gedit /etc/Environment
 Change REALSENSE_DRIVER=LIBREALSENSE29
