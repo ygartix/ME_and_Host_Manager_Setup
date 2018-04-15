@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PerCHW.Tools.CameraHW.Facade</name>
+    </assembly>
+    <members>
+        <member name="T:PerCHW.Tools.CameraHW.Facade.CameraHWFactory">
+            <summary>
+            Camera HW Factory
+            </summary>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Facade.CameraHWFactory.#ctor">
+            <summary>
+            Camera HW Factory ctor
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Facade.CameraHWFactory.Instance">
+            <summary>
+            Camera HW Factory Singelton Instance
+            </summary>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Facade.CameraHWFactory.SetupSupportedFactories(PerCHW.Tools.CameraHW.Facade.CameraHWFactory.SupportedFactories)">
+            <summary>
+            Configure the types of factory to initialize upon first CameraHW instance initialization
+            </summary>
+            <param name="supportedFactories"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:PerCHW.Tools.CameraHW.Facade.CameraHWFactory.SetupRemoteFactoryConnection(System.String,System.Int32)" -->
+        <member name="M:PerCHW.Tools.CameraHW.Facade.CameraHWFactory.GetConnectedDevices">
+            <summary>
+            Get Connected Devices
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Facade.CameraHWFactory.GetDevicesFactories">
+            <summary>
+            Get Internal Factories
+            </summary>
+            <returns>Internl Factories List</returns>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Facade.CameraHWFactory.CreateDevice(PerCHW.Tools.CameraHW.Common.Types.DeviceDetails,PerCHW.Tools.CameraHW.Commands.FactoryDetails)">
+            <summary>
+            Create Device
+            </summary>
+            <param name="deviceDetails">Requested Device</param>
+            <param name="factoryDetails">Factory to use</param>
+            <returns>Device Facade</returns>
+        </member>
+    </members>
+</doc>

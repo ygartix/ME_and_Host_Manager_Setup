@@ -152,6 +152,10 @@ def linux_host_handler(machine):
     # Example: sshpass -p "password" scp -r user@example.com:/some/remote/path /some/local/path
     deploy_linux_host(machine)
 
+    # Copy the rs_autolabs_utils folder to the target machine (Enables automatic FW updates)
+    os.system("sshpass -p '" + password + "' scp -r rs_autolabs_utils " + userName + "@" + machineName + ":~/rs_autolabs_utils")
+    print("----- The folder 'rs_autolabs_utils' folder copied to the target machine -----")
+	 
     # Copy install_Linux_librealsense.sh on the remote machine...
     os.system("sshpass -p '" + password + "' scp ./install_Linux_librealsense.sh " + userName + "@" + machineName + ":~/install_Linux_librealsense.sh")
     print("----- The file 'install_Linux_librealsense.sh' copied to the target machine -----")

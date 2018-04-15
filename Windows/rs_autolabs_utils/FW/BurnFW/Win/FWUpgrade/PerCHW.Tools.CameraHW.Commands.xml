@@ -1,0 +1,389 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PerCHW.Tools.CameraHW.Commands</name>
+    </assembly>
+    <members>
+        <member name="T:PerCHW.Tools.CameraHW.Commands.CommandParameter">
+            <summary>
+            Command Parameter
+            </summary>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.CommandParameter.#ctor(System.String,System.Byte[])">
+            <summary>
+            Ctor
+            </summary>
+            <param name="name">Name</param>
+            <param name="value">Value</param>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandParameter.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandParameter.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="T:PerCHW.Tools.CameraHW.Commands.CommandResultSection">
+            <summary>
+            Command Result Section
+            </summary>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.CommandResultSection.#ctor(System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.Byte[])">
+            <summary>
+            Ctor
+            </summary>
+            <param name="name">Name</param>
+            <param name="title">Title</param>
+            <param name="offset">Offset</param>
+            <param name="size">Size</param>
+            <param name="formatter">Formatter</param>
+            <param name="valueFormatted">Value Formatted</param>
+            <param name="valueRawData">Value Raw Data</param>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResultSection.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResultSection.Title">
+            <summary>
+            Title
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResultSection.Offset">
+            <summary>
+            Offset
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResultSection.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResultSection.Formatter">
+            <summary>
+            Formatter
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResultSection.ValueFormatted">
+            <summary>
+            Formatted Value
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResultSection.ValueRawData">
+            <summary>
+            Raw Data Value
+            </summary>
+        </member>
+        <member name="T:PerCHW.Tools.CameraHW.Commands.DeviceNotFoundException">
+            <summary>
+            Device not Found Exception
+            </summary>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.DeviceNotFoundException.#ctor(System.String)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="usbPath">Device USB Path</param>
+        </member>
+        <member name="T:PerCHW.Tools.CameraHW.Commands.FactoryDetails">
+            <summary>
+            Factory Details
+            </summary>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.FactoryDetails.#ctor(System.String,System.String,PerCHW.Tools.CameraHW.Commands.ICommandsServiceFactory,System.Collections.Generic.IEnumerable{PerCHW.Tools.CameraHW.Common.Types.DeviceSku},System.Boolean)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="name">Name</param>
+            <param name="description">Description</param>
+            <param name="isRemote">Remote/Local Factory</param>
+            <param name="factory">Factory</param>
+            <param name="supportedSkus">Supported Skus</param>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.FactoryDetails.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.FactoryDetails.Description">
+            <summary>
+            Description
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.FactoryDetails.IsRemote">
+            <summary>
+            Indicates whether the factory is for remote or local devices
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.FactoryDetails.SupportedDevicesSkus">
+            <summary>
+            Supported Devices SKUs
+            </summary>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.FactoryDetails.ToString">
+            <summary>
+            ToString
+            </summary>
+            <returns>FactoryDetails string</returns>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.FactoryDetails.Equals(PerCHW.Tools.CameraHW.Commands.FactoryDetails)">
+            <summary>
+            Is Equal
+            </summary>
+            <param name="other">Factory Details to Compare</param>
+            <returns>Is Equal</returns>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.FactoryDetails.GetHashCode">
+            <summary>
+            GetHashCode
+            </summary>
+            <returns>HashCode</returns>
+        </member>
+        <member name="T:PerCHW.Tools.CameraHW.Commands.ICommandsService">
+            <summary>
+            Send Command Interface
+            </summary>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.ICommandsService.Send(System.String,System.Byte[])">
+            <summary>
+            Send Command
+            </summary>
+            <param name="command">Command including parameters</param>
+            <param name="data">Data parameter</param>
+            <returns>Command Result</returns>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.ICommandsService.Send(System.String,System.Nullable{System.UInt32},System.Nullable{System.UInt32},System.Nullable{System.UInt32},System.Nullable{System.UInt32},System.Byte[])">
+            <summary>
+            Send Command
+            </summary>
+            <param name="command">Command Name</param>
+            <param name="param1">Parameter 1</param>
+            <param name="param2">Parameter 2</param>
+            <param name="param3">Parameter 3</param>
+            <param name="param4">Parameter 4</param>
+            <param name="data">Data parameter</param>
+            <returns>Command Result</returns>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.ICommandsService.SendScript(System.String)">
+            <summary>
+            Send Script
+            </summary>
+            <param name="filePath">Full path of script file</param>
+            <returns>Script Result</returns>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.ICommandsService.InitCommandsXml(System.String)">
+            <summary>
+            Init Commands XML
+            </summary>
+            <param name="xmlPath">Full path to xml file</param>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.ICommandsService.GetCommands">
+            <summary>
+            Get all commands
+            </summary>
+            <returns>Command List</returns>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.ICommandsService.GetCommand(System.String)">
+            <summary>
+            Get command data
+            </summary>
+            <param name="command">Command</param>
+            <returns>Command</returns>
+        </member>
+        <member name="T:PerCHW.Tools.CameraHW.Commands.Command">
+            <summary>
+            Command
+            </summary>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.Command.#ctor(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{PerCHW.Tools.CameraHW.Commands.CommandParameter})">
+            <summary>
+            Ctor
+            </summary>
+            <param name="name">Name</param>
+            <param name="opCode">Op Code</param>
+            <param name="description">Description</param>
+            <param name="parameters">Parameters</param>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.Command.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.Command.OpCode">
+            <summary>
+            Op Code
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.Command.Description">
+            <summary>
+            Description
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.Command.Parameters">
+            <summary>
+            Parameters
+            </summary>
+        </member>
+        <member name="T:PerCHW.Tools.CameraHW.Commands.CommandResult">
+            <summary>
+            Command Result
+            </summary>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.CommandResult.#ctor(System.Boolean,System.String,System.Byte[],System.String,System.Int32,System.String,System.Collections.Generic.IEnumerable{PerCHW.Tools.CameraHW.Commands.CommandResultSection},System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="isCompletedOk">Is Completed OK</param>
+            <param name="resultFormatted">Formatted Result</param>
+            <param name="resultRawData">Raw Data Result</param>
+            <param name="resultRawDataFormatted">Formatted Raw Data Result</param>
+            <param name="errorCode">Error Code</param>
+            <param name="errorMessage">Error Message</param>
+            <param name="sections">Sections</param>
+            <param name="commandName">Command Name</param>
+            <param name="fullCommand">Full Command</param>
+            <param name="scriptFile">Script File</param>
+            <param name="lineNumber">Line Number of Command</param>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResult.IsCompletedOk">
+            <summary>
+            Is Completed OK
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResult.ResultFormatted">
+            <summary>
+            Formatted Result
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResult.ResultRawData">
+            <summary>
+            Result Raw Data
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResult.ResultRawDataFormatted">
+            <summary>
+            Result Raw Data Formatted
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResult.ErrorCode">
+            <summary>
+            Error Code
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResult.ErrorMessage">
+            <summary>
+            Error Message
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResult.Sections">
+            <summary>
+            Command Results Section (Parsed form ReadData on the commands xml file)
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResult.LineNumber">
+            <summary>
+            Line Number
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResult.ScriptFile">
+            <summary>
+            Script File Name
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResult.CommandName">
+            <summary>
+            Command Name
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResult.FullCommand">
+            <summary>
+            Full Command with Arguments
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.CommandResult.Item(System.String)">
+            <summary>
+            Get Section By Name
+            </summary>
+            <param name="name">Section Name</param>
+            <returns>Section</returns>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.CommandResult.CreateOkCommandResult">
+            <summary>
+            Create a "OK" command result
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.CommandResult.CreateNokCommandResult(System.String)">
+            <summary>
+            Create a "not OK" command result
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PerCHW.Tools.CameraHW.Commands.ICommandsServiceFactory">
+            <summary>
+            Commands Service Factory
+            </summary>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.ICommandsServiceFactory.GetAvailableCommandsServices">
+            <summary>
+            Get Available Commands Services
+            </summary>
+            <returns>Available Commands Services</returns>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.ICommandsServiceFactory.CreateCommandsService(PerCHW.Tools.CameraHW.Common.Types.DeviceDetails)">
+            <summary>
+            Create Commands Service
+            </summary>
+            <param name="deviceDetails">Device Details</param>
+            <returns>Commands Service</returns>
+            <exception cref="T:PerCHW.Tools.CameraHW.Commands.DeviceNotFoundException">Thrown when the requested device isn't found</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown when the requested device argument is null</exception>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.ICommandsServiceFactory.FactoryDetails">
+            <summary>
+            Factory Details
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.ICommandsServiceFactory.IsRemoteFactory">
+            <summary>
+            Indicates whether the factory is for remote or local devices
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:PerCHW.Tools.CameraHW.Commands.IRemoteCommandsServiceFactory.SetupRemoteConfiguration(System.String,System.Int32)" -->
+        <member name="T:PerCHW.Tools.CameraHW.Commands.ScriptResult">
+            <summary>
+            Script Result
+            </summary>
+        </member>
+        <member name="M:PerCHW.Tools.CameraHW.Commands.ScriptResult.#ctor(System.Collections.Generic.IEnumerable{PerCHW.Tools.CameraHW.Commands.CommandResult})">
+            <summary>
+            Ctor
+            </summary>
+            <param name="commandsResults">Commands Results</param>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.ScriptResult.IsCompletedOk">
+            <summary>
+            Is Completed OK
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.ScriptResult.CommandsResults">
+            <summary>
+            All Commands Results
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.ScriptResult.FailedCommandsResults">
+            <summary>
+            Failed Commands Results
+            </summary>
+        </member>
+        <member name="P:PerCHW.Tools.CameraHW.Commands.ScriptResult.CommandsResultsWithReturnedData">
+            <summary>
+            Commands Results with Returned Data
+            </summary>
+        </member>
+    </members>
+</doc>
