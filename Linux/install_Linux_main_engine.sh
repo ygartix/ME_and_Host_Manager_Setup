@@ -34,7 +34,7 @@ sudo chown -R $USER_NAME $DIR
 ## "realto-i" check for lab-user
 # faceless user: lab_autoinstaller
 # password:      1a2B3c4D_ZAYBxc
-git clone https://lab_autoinstaller:1a2B3c4D_ZAYBxc@git-ger-8.devtools.intel.com/gerrit/p/rs_autolabs.git
+git clone https://rsautolabs:rsautolabs_intel@github.com/IntelRealSense/rs_autolabs.git
 
 #User: auto_lab_installer@intel.com
 #Pass: xzxvi00@
